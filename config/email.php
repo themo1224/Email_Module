@@ -1,16 +1,15 @@
 <?php
 
 return [
-    /*
+     /*
     |--------------------------------------------------------------------------
     | Default Mail Configuration
     |--------------------------------------------------------------------------
     */
-    'from' => [
+    'form' =>[
         'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'name' => env('MAIL_FORM_NAME', 'Example'),
     ],
-
     /*
     |--------------------------------------------------------------------------
     | Template Configuration
@@ -21,8 +20,7 @@ return [
         'cache' => true,
         'default_layout' => 'emails.layouts.default',
     ],
-
-    /*
+/*
     |--------------------------------------------------------------------------
     | Retry Configuration
     |--------------------------------------------------------------------------
@@ -52,4 +50,5 @@ return [
         'connection' => env('EMAIL_QUEUE_CONNECTION', 'redis'),
         'queue' => env('EMAIL_QUEUE_NAME', 'emails'),
     ],
-]; 
+
+];
