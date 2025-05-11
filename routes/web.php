@@ -17,3 +17,5 @@ use Modules\Email\App\Http\Controllers\EmailController;
 Route::group([], function () {
     Route::resource('email', EmailController::class)->names('email');
 });
+
+Route::resource('templates', TemplateController::class);
